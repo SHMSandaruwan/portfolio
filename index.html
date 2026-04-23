@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Software Engineer Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/colors.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animations.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="logo">My<span>Portf.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact" class="btn-primary-sm">Get in Touch</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content fade-in">
+            <p class="tagline">Hello, I'm</p>
+            <h1 class="heading-xl">A Senior Software Engineer <br><span class="text-gradient">Building Scalable GenAI & AWS Solutions.</span></h1>
+            <p class="subheading">I deliver high-ROI applications by combining full stack engineering with deep expertise in cloud architecture and AI.</p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">Hire Me</a>
+                <a href="#projects" class="btn-secondary">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about reveal" id="about">
+        <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+        <div class="about-content">
+            <p>I am a Senior Software Engineer with a passion for building scalable, high-performance web applications and distributed systems. My unique value proposition is the ability to seamlessly bridge the gap between creative frontend design, robust backend cloud architecture (AWS), and cutting-edge Artificial Intelligence (GenAI). I focus on delivering real ROI for my clients by streamlining operations and creating highly engaging user experiences.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills reveal" id="skills">
+        <h2 class="section-title">Technical <span class="text-gradient">Expertise</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card glass">
+                <h3>Frontend</h3>
+                <p>React, Next.js, HTML/CSS, Tailwind</p>
+            </div>
+            <div class="skill-card glass">
+                <h3>Backend</h3>
+                <p>Node.js, Python, PostgreSQL, REST/GraphQL</p>
+            </div>
+            <div class="skill-card glass">
+                <h3>Cloud / AWS</h3>
+                <p>Lambda, S3, EC2, DynamoDB, API Gateway</p>
+            </div>
+            <div class="skill-card glass">
+                <h3>AI / GenAI</h3>
+                <p>LLM Integration, Prompt Engineering, RAG</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects reveal" id="projects">
+        <h2 class="section-title">Featured <span class="text-gradient">Work</span></h2>
+        <div class="projects-grid">
+            <div class="project-card glass">
+                <div class="project-img bg-cyan"></div>
+                <div class="project-info">
+                    <h3>AI Document Analyzer</h3>
+                    <p>Automated data extraction pipeline using GenAI. Increased client processing speed by 300%.</p>
+                    <div class="tech-stack"><span>Python</span> <span>AWS</span> <span>OpenAI</span></div>
+                    <div class="project-links">
+                        <a href="#" class="link">View Live</a>
+                        <a href="#" class="link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <div class="project-img bg-blue"></div>
+                <div class="project-info">
+                    <h3>Scalable SaaS Platform</h3>
+                    <p>Built a tenant-based platform handling 1M+ monthly requests with zero downtime.</p>
+                    <div class="tech-stack"><span>React</span> <span>Node.js</span> <span>AWS Architecture</span></div>
+                    <div class="project-links">
+                        <a href="#" class="link">View Live</a>
+                        <a href="#" class="link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download & Contact Section -->
+    <section class="section contact reveal" id="contact">
+        <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+        <p style="margin-bottom: 2rem; color: var(--text-muted); text-align: center; max-width: 600px; margin-inline: auto;">
+            Ready to start your next project or looking for a senior addition to your team? Feel free to reach out or download my detailed CV.
+        </p>
+        <div class="contact-actions">
+            <a href="mailto:your.email@example.com" class="btn-primary">Email Me</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn-secondary">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank" class="btn-secondary">GitHub</a>
+        </div>
+        <div style="margin-top: 3rem; text-align: center;">
+            <a href="./docs/cv.pdf" class="btn-primary-sm" style="margin-right: 1rem;">Download CV (PDF)</a>
+            <a href="./docs/cover-letter-template.pdf" class="btn-primary-sm">Cover Letter Template</a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
