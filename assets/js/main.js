@@ -48,4 +48,55 @@ document.addEventListener("DOMContentLoaded", () => {
     reveals.forEach(reveal => {
         revealOnScroll.observe(reveal);
     });
+
+    // Typewriter Effect
+    const typewriterElement = document.getElementById('typewriter');
+    if (typewriterElement) {
+        const words = [
+            "Building Scalable GenAI & AWS Solutions.",
+            "Architecting Robust Cloud Infrastructure.",
+            "Developing High-Performance Web Apps.",
+            "Delivering High-ROI Digital Products."
+        ];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        
+        // Clear initial text
+        typewriterElement.textContent = '';
+
+        function type() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = 80; // typing speed
+
+            if (isDeleting) {
+                typeSpeed /= 2; // deleting is faster
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                // Pause at the end of the word
+                typeSpeed = 2500;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                // Switch to next word
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 500; // Pause before typing the next word
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        // Start typing after a short delay
+        setTimeout(type, 1000);
+    }
 });
